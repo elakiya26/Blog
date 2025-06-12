@@ -1,0 +1,140 @@
+body {
+    background: linear-gradient(#f07373, #da94f0);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.box {
+    --padding: 10px;
+    width: max-content;
+    display: flex;
+    /* align-items: right;
+    justify-content: right; */
+    position: absolute;
+    top: 1%;
+    padding-top: 5px;
+    right: 100px;
+    border-radius: 100px;
+    background: #f7f3f3;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding);
+    transition: box-shadow 0.25s;
+    cursor: pointer;
+
+
+}
+
+.box:focus-within {
+    box-shadow: inset 4px 4px 10px -1px #da94f0, inset -4px -4px 10px -1px #f07373,
+        inset -0.5px -0.5px 0px #f07373, inset 0.5px 0.5px 0px #f07373, 0px 12px 14px -10px;
+}
+
+#search-input {
+    font-size: 13px;
+    font-family: cursive;
+    color: #0a0909;
+    text-align: center;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    box-shadow: inset 4px 4px 10px -1px #da94f0, inset -4px -4px 10px -1px #f07373,
+        inset -0.5px -0.5px 0px #f07373, inset 0.5px 0.5px 0px #f07373, 0px 12px 14px -10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* right: 50%; */
+}
+
+h1 {
+    font-family: cursive;
+    color: #f8f1f7;
+    font-size: 300%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+
+.container #dycalendar {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+#dycalendar table {
+    width: 100%;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dycalendar-prev-next-btn {
+    width: 100px;
+    color: #0a0909;
+    overflow: hidden;
+    transition: transform 0.5s;
+
+}
+
+.dycalendar-prev-next-btn:hover {
+    transform: translateY(-5px);
+}
+
+.dycalendar-month-container .dycalendar-body table tr td {
+    cursor: pointer;
+}
+
+.input-box {
+    position: relative;
+
+    width: 100%;
+    max-width: 500px;
+    max-height: 150px;
+    background: #f7f3f3;
+    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    outline: none;
+    border-radius: 5px;
+
+}
+
+.input-box img {
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+/* #containers{
+    display: flex;
+
+}
+.notes-container{
+    display: flex;
+    flex-basis: 30%;
+    right: 50%;
+} */

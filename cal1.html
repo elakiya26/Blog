@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Calendar</title>
+</head>
+
+<body>
+    <h1>Happy Day<img src="images/flo-removebg-preview.png" width="70"></h1>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="dycalendar.css">
+    <div id="containers">
+        <div class="container">
+
+            <div id="dycalendar">
+
+            </div>
+        </div>
+        <div class="dycalendar-body"></div>
+        <div class="notes-container"></div>
+
+    </div>
+
+    <div class="box">
+        <input type="hidden" id="search-input" placeholder="Create Your Memories...">
+        <button class="btn"><img src="images/book-removebg-preview.png" width="50"></button>
+    </div>
+
+
+    <script src="dycalendar.js"></script>
+    <!-- <script src="st.js"></script>  -->
+    <script>
+        dycalendar.draw({
+            target: "#dycalendar",
+            type: "month",
+            dayformat: 'full',
+            monthformat: 'full',
+            highlighttargetdate: true,
+            prevnextbutton: 'show',
+
+        });
+    </script>
+    <script src="cal1.js"></script>
+
+</body>
+
+</html>
